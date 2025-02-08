@@ -1,7 +1,12 @@
 {% extends "layout.html" %}
+{% load static %}
 {% block title %}
 Home Page
 {% endblock %}
 {% block heading %}
 <h1>This is Home Page</h1>
 {% endblock  %}
+
+{% block image %}
+<img src="{% static 'images/best_performer_02.jpg' %}" alt="Best Peformer" height="400px" width="600px">
+{% endblock %}
