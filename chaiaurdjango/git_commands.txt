@@ -1,0 +1,6 @@
+git init
+git remote add origin <repo-url>
+git add .
+git commit -m "message to type"
+git push -u origin main 
+#Sometimes master could also, be in use. you can check by running git branch command.
