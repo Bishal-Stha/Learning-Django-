@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    background-color: rgb(13, 26, 69);
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    background-color: grey;
+    
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li a{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.25em;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px 2px;
+    margin-top: 10px;
+}
+
+img[alt="Batman"]{
+    height: 25rem;
+    width: 30rem;
+    display: block;
+    border-radius: 1rem;
+    margin: auto;
+    /* margin-bottom: 10px; */
+
+}
+
+img[alt="ux-img"]{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    overflow: scroll;
+}
+
+.ux-collection{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 5px;
+    width: 97%;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.user-exp{
+    height: 350px;
+    width: 250px;
+    background: #cfc4c4;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    margin: 3px 5px;
+    
+}
+.text{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+p{
+    font-size: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+footer{
+    text-align: center;
+    
+}
