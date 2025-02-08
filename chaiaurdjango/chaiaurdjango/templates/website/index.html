@@ -1,57 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="hero-section">
-            <h2 hero-text>Welcome to my website</h2>
-            <img src="{% static 'images/batman.png' %}" alt="Batman">
-        </div>
-
-        <div class="ux-collection">
-            <div class="user-exp">
-                <h4 class="text">Physics</h4>
-                <img src="{% static 'images/batman.png' %}" alt="ux-img">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis soluta molestias, quia perferendis optio iusto quaerat amet ipsa delectus veritatis incidunt corporis sunt nihil a illo ipsam facere eius? Velit praesentium adipisci unde ipsam animi possimus, ea molestias optio eum debitis placeat maxime atque nostrum doloremque itaque dicta officiis obcaecati!</p>
-            </div>
-
-            <div class="user-exp">
-                <h4 class="text">Physics</h4>
-                <img src="{% static 'images/batman.png' %}" alt="ux-img">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis soluta molestias, quia perferendis optio iusto quaerat amet ipsa delectus veritatis incidunt corporis sunt nihil a illo ipsam facere eius? Velit praesentium adipisci unde ipsam animi possimus, ea molestias optio eum debitis placeat maxime atque nostrum doloremque itaque dicta officiis obcaecati!</p>
-            </div>
-
-            <div class="user-exp">
-                <h4 class="text">Physics</h4>
-                <img src="{% static 'images/batman.png' %}" alt="ux-img">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis soluta molestias, quia perferendis optio iusto quaerat amet ipsa delectus veritatis incidunt corporis sunt nihil a illo ipsam facere eius? Velit praesentium adipisci unde ipsam animi possimus, ea molestias optio eum debitis placeat maxime atque nostrum doloremque itaque dicta officiis obcaecati!</p>
-            </div>
-
-            <div class="user-exp">
-                <h4 class="text">Physics</h4>
-                <img src="{% static 'images/batman.png' %}" alt="ux-img">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis soluta molestias, quia perferendis optio iusto quaerat amet ipsa delectus veritatis incidunt corporis sunt nihil a illo ipsam facere eius? Velit praesentium adipisci unde ipsam animi possimus, ea molestias optio eum debitis placeat maxime atque nostrum doloremque itaque dicta officiis obcaecati!</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        Copyright @ Bishal Shrestha 2025
-    </footer>
-
-</body>
-</html>
+{% extends "layout.html" %}
+{% block title %}
+Home Page
+{% endblock %}
+{% block heading %}
+<h1>This is Home Page</h1>
+{% endblock  %}
