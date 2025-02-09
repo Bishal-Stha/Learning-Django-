@@ -4,16 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your site description here">
     <title>{% block title %}Layout{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
-
+    <link rel="icon" type="image/png" href="{% static 'favicon.png' %}">
 </head>
 <body>
-    
-    {% block heading %}<h1>Bishal Shrestha</h1>{% endblock %}
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla maiores placeat doloribus minima soluta debitis nihil unde modi tempora vero. Ipsum, modi error. Eveniet facilis ex optio aliquid, explicabo esse.</p>
-    {% block image %}
-    <img src="{% static 'images/batman.png' %}" alt="Batman" height="400px" width="600px">
-{% endblock %}
+
+    <!-- Responsive Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><b style="color:#2e6599;">Bishal</b> <i style="color:#ac352f;">Stha</i></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                {% comment %} <li><a href="/services">Services</a></li> {% endcomment %}
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{% static 'script.js' %}"></script>
 </body>
 </html>

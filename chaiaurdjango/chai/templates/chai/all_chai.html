@@ -1,3 +1,59 @@
 {% extends "layout.html" %}
 {% block title %}All Chai Page{% endblock %}
-{% block heading%}<h1>This is All Chai Page</h1>{% endblock  %}
+{% block content %}
+
+<h1 style="text-align: center;">This is All Chai Page</h1>
+
+<!-- Container for Chai Cards -->
+<div class="chai-container">
+    {% for chai in chais %}
+    <div class="chai-card">
+        <h2>{{ chai.name }}</h2>    
+        <img src="{{ chai.images.url }}" alt="{{ chai.name }}">
+        <p>{{ chai.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+    .chai-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .chai-card {
+        background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 15px;
+        width: 250px;
+        backdrop-filter: blur(10px); /* Apply blur effect to the background */
+        border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    }
+
+    .chai-card img {
+        width: 100%;
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    .chai-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    }
+
+    @media (max-width: 600px) {
+        .chai-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+
+{% endblock %}
