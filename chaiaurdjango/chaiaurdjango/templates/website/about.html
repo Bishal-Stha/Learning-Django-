@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+{% block title %}
+About Page
+{% endblock %}
+{% block content %}
+<h1>This is About Page</h1>
+<img src="{% static 'images/batman.png' %}" alt="Best Peformer" height="400px" width="600px">
+{% endblock%}
